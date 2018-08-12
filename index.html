@@ -8,7 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon"/>
+	  <!-- login google -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="194244769150-59tsu76q92cidm4bhg492ep1dumeol1s.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+	  <!-- login google -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"/>
     <title> SMK Negeri 1 Giritontro</title>
 
     <!-- Bootstrap core CSS -->
@@ -49,6 +54,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#fasilitas">FASILITAS</a>
+		    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
             </li>
           </ul>
         </div>
@@ -290,6 +296,24 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+	  <!-- script login google -->
+   <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+    </script>
+	  <!-- script login google -->
 
   </body>
 
