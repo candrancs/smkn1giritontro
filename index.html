@@ -41,6 +41,8 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+	     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+	      <div id="my-signin2"></div>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -54,7 +56,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#fasilitas">FASILITAS</a>
-		    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
             </li>
           </ul>
         </div>
@@ -313,6 +314,26 @@
         console.log("ID Token: " + id_token);
       };
     </script>
+	   <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+	  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 	  <!-- script login google -->
 
   </body>
