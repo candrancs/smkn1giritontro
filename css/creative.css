@@ -172,11 +172,13 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.imgur.com/0xLJX82.jpg);
-  background-position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
   height: 50%;
 
 }
