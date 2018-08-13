@@ -168,7 +168,7 @@ img::-moz-selection {
 
 header.masthead {
   width: 100%;
-  height: auto;
+  height: 50%;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.imgur.com/0xLJX82.jpg);
@@ -177,7 +177,7 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: auto;
+  height: 50%;
 
 }
 
