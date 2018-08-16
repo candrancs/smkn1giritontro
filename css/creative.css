@@ -527,4 +527,7 @@ border: 2px;
 div.a {
     text-align: left;
 }
-
+div.b {
+    text-align: left;
+    color:808080;
+}
