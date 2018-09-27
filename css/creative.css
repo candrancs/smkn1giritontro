@@ -346,7 +346,7 @@ header.masthead p {
 .footer-distributed h3 {
   color: #ffffff;
   font-family: 'Rajdhani', sans-serif;
-  padding-left: 10px;
+  padding-left: 0px;
   overflow: hidden;
   font-size: 25px;
 }
