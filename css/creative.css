@@ -185,8 +185,10 @@ header.masthead hr {
   margin-bottom: 30px;
 }
 
-header.masthead h1 {
+header.masthead h1 /*, :hover*/{
   font-size: 2rem;
+  color: #ffffff;
+  /*background-color:rgba(0,0,0,0.5);*/
 }
 
 header.masthead p {
@@ -308,12 +310,12 @@ header.masthead p {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  background-color: #b3e0ff !important;
   border-color: #0099ff;
 }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem transparent !important;
 }
 
 /*footer*/
