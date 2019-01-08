@@ -35,7 +35,34 @@
       <center><h3>Nautika Kapal Penangkap Ikan</h3></center>
       <p>Jurusan Nautika Kapal Penangkap Ikan adalah Prodi pertama yang ada sejak SMK Negeri 1 Giritontro pertama kali didirikan. Jurusan ini memiliki visi yaitu melatih taruna NKPI untuk menjadi perwira Pelayaran Besar (Samudra) bidang keahlian NKPI.Sudah ada 9 angkatan yang lulus pada tahun 2018. Pada tahun ajaran 2018/2019 Prodi ini dibuka untuk Taruni. Dulu Prodi NKPI pada angkatan pertama dan kedua terdapat taruni namun pada angkatan ke-3 hingga angkatan ke-11 dan baru tahun ini prodi tersebut kembali dibuka untuk Taruni.</p>
       <p>Mata Pelajaran Khusus NKPI antara lain yaitu Stabilitas Kapal, Management Perkapalan, Pengoperasian alat Tangkap, Pelayaran Kapal Perikanan, Teknik Alat Penangkapan Ikan, Komunikasi Dinas Jaga Kapal Perikanan, Inggris Maritim, Dasar Keselamatan Laut, Simulasi Digital, Hukum Maritim, Bangunan Stabilitas Kapal Perikanan, dll.</p>
-       <h4>Kunjungan Industri NKPI</h4>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="https://2.bp.blogspot.com/-oMY7ez8hYdQ/XA40P1vZ5VI/AAAAAAAAC5w/SatFS6GGFI0IcKVn7iEsWGYZ1QJb2SFtgCLcBGAs/s1600/tirta.jpg" style="width:100%">
+          <div class="text">Tirta Samudra</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="https://4.bp.blogspot.com/-ny7QR1ok-0s/XA40PmOSClI/AAAAAAAAC5s/FazxUiMQag4Dsp7s3lhc2rGclNTyCaJwgCLcBGAs/s1600/tirta2.jpg" style="width:100%">
+          <div class="text">Tirta Samudra</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="https://3.bp.blogspot.com/-K1_ZBJLUR2I/XA40J-i6orI/AAAAAAAAC5Q/g7FhLd1y4QAvIVHXx3FV1mHoYBfo2ucgwCLcBGAs/s1600/pkl.jpg" style="width:100%">
+          <div class="text">Praktek Kerja Lapangan</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="https://3.bp.blogspot.com/-j7TN5oAw3gk/XA40KC1T9II/AAAAAAAAC5U/K0_QJgHMiTMskiNmDgsniuVuYLav2R5kwCLcBGAs/s1600/politeknik.jpg" style="width:100%">
+          <div class="text">Politeknik Ilmu Semarang</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      <h4>Kunjungan Industri NKPI</h4>
       <p>Kunjungan Industri ini biasanya dilakukan waktu kelas X naik ke Kelas XI. untuk Prodi ini, Pada saat Kunjungan Industri dilakukan di Semarang, kegiatannya pemberian materi, praktek menjangka peta, praktek menggunakan GPS dan radar. Kunjungan Industri dilakukan selama 8-10 hari.</p>
       <h4>Prakerin (Praktek Kerja Industri)</h4>
       <p>Untuk prodi NKPI, Prakerin NKPI dilakukan dengan berlayar di kapal. Berlayar di kapal ini biasanya disebut dengan <i>menyang</i>. Prakerin dilakukan selama 6 bulan. Untuk angkatan pertama sampai angkatan ke-9 masih menggunakan kurikulum KTSP jadi pelaksanaan Prakerin dilakukan selama 6 bulan penuh. Namun dimulai dari angkatan ke-10 menggunakan kurtilas atau kurikulum 2013 pelaksanaan waktu 6 bulan itu dibagi menjadi 2 trip atau perjalanan jadi setiap trip dilaksanakan selama 3 bulan. Trip pertama dilaksanakan pada saat kelas 2 akhir dan trip kedua dilaksanakan pada saat awal masuk ke kelas 3. Prakerin dilaksanakan di Juana Pati, Benoa Bali, dan Pekalongan. Kurang lebih kegiatan yang dilakukan selama Prakerin, yaitu : </p>
@@ -96,6 +123,25 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 2 seconds
 }
 </script>
 </body>

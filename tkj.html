@@ -34,6 +34,28 @@
       <center><h3>Teknik Komputer dan Jaringan</h3></center>
       <p>Prodi Teknik Komputer dan Jaringan merupakan Jurusan Teknik yang mempelajari tentang cara instalasi PC, instalasi LAN, memperbaiki PC dan mempelajari program-program PC. jurusan ini dibuka pada tahun ketiga SMK Negeri 1 Giritontro berdiri. Terdapat 6 angkatan yang sudah lulus terakhir itu tahun ajaran 2017/2018. Prodi TKJ di SMK ini merupakan Prodi yang memiliki 4 Kelas dan merupakan jurusan TKJ dengan kelas terbanyak se-kabupaten Wonogiri.</p>
       <p>Mata Pelajaran Khusus TKJ antara lain yaitu Jaringan Dasar, Sistem Komputer, Sistem Operasi Jaringan, Komunikasi Data, Rancang Bangun Jaringan, Troubleshooting Jaringan, Komunikasi Data, Simulasi Digital, Perakitan PC, Kerja Proyek TKJ, Keamanan Jaringan, dll. Mata Pelajaran ini menurut mata pelajaran tahun ajaran 2018 /2019 dan bisa saja berubah karena menyesuaikan dengan Kurikulum terbaru.</p>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="https://4.bp.blogspot.com/-9OYe1puHUA0/XA40OjLF6qI/AAAAAAAAC5g/_foHqbm_5TE4m9ja5OhQG_TkqdtkOelBACLcBGAs/s1600/telkom.JPG" style="width:100%">
+          <div class="text">Kunjungan Industri ke PT. Telkom Surabaya</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="https://3.bp.blogspot.com/-8Ci2V8GzPKA/XA40OzgUjDI/AAAAAAAAC5k/Hff49-BNIeYt0qE9wxPaIqWMzHn0qMBcgCLcBGAs/s1600/telkom2.JPG" style="width:100%">
+          <div class="text">Kunjungan Industri ke PT. Telkom Surabaya</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="https://2.bp.blogspot.com/-ruhRwbyGL1c/XA40PajqsfI/AAAAAAAAC5o/3gb1_-PoDucw1gVxDzYH9EJeaunN6BhIgCLcBGAs/s1600/telkom3.JPG" style="width:100%">
+          <div class="text">Kunjungan Industri ke PT. Telkom Surabaya</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
       <h4>Kunjungan Industri</h4>
       <p>Kunjungan Industri dilaksanakan pada saat kelas X naik ke kelas XI. Kunjungan Industri untuk prodi ini terdapat 2 pilihan yaitu Jakarta-Bandung atau Surabaya-Denpasar. Beberapa tahun terakhir kebanyakan memilih Surabaya-Denpasar. Kegiatan ini biasanya dilakukan 5-6 hari. kegiatan selama Kunjungan Industri untuk Surabaya-Denpasar biasanya nanti ke PT.Telkom Surabaya kemudian ke BaliTV Denpasar,Bali. Namun, kita hanya mengunjungi salah satu tempat jika sudah berkunjung ke SUrabaya maka nanti di Denpasar,Bali nya hanya untuk hiburan. Jika ke jakarta-Bandung hampir sama berkunjung ke sebuah PT di salah satu daerah, selebihnya untuk liburan. Seperti halnya Studytour/piknik.</p>
       <h4>Praktek Kerja Industri</h4>
@@ -92,6 +114,25 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 2 seconds
 }
 </script>
 </body>

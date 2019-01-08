@@ -33,6 +33,28 @@
       <center><h3>Tata Busana</h3></center>
       <p>Prodi Tata Busana merupakan jurusan yang mempelajari produksi, mendesain, belajar membuat pola, menjahit, mengenali seluk-beluk kain, dan penggunaan kain tersebut untuk fashion. Prodi ini termasuk  prodi baru yang dibuka pada tahun 2017 dan sekarang baru terdapat 2 angkatan yang belum lulus. Prodi ini baru menampung satu kelas setiap angkatannya.</p>
       <p>Mata Pelajaran Khusus Tata Busana antaranya yaitu Kepariwisataan, Dasar Desain, Pembuatan Pola, Tekstip, Teknologi Menjahit, Costum Made, Desain Busana, Menghias Busana, Busana Industri, dll.</p>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="https://2.bp.blogspot.com/--6TwT8Q0DPU/XBvlR_waVXI/AAAAAAAAC68/1Lf9DoXhT9IQRRegNswFAiUIQMeNL94WgCLcBGAs/s1600/tb1.jpg" style="width:100%">
+          <div class="text">Kegiatan Tata Buasana</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="https://3.bp.blogspot.com/-Mf0lT858MpY/XBvlSVVK8wI/AAAAAAAAC7A/j0ksgrhR4gcAb1ATKfHNKoNjfXLIWCDYwCLcBGAs/s1600/tb2.jpg" style="width:100%">
+          <div class="text">Kegiatan Tata Buasana</div>
+        </div>
+      <!--  <div class="mySlides fade">
+          <img src="https://2.bp.blogspot.com/-ruhRwbyGL1c/XA40PajqsfI/AAAAAAAAC5o/3gb1_-PoDucw1gVxDzYH9EJeaunN6BhIgCLcBGAs/s1600/telkom3.JPG" style="width:100%">
+          <div class="text">Kunjungan Industri ke PT. Telkom Surabaya</div>
+        </div> -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+        </div>
       <h4>Kunjungan Industri</h4>
       <p>Kunjungan Industri dilaksanakan pada saat kelas X naik ke kelas XI. Kunjungan Industri untuk prodi Tata Busana ini pertama kali dilaksanakan kunjungan ke Arva School of Fashion di Surabaya dan ke Denpasar,Bali nya hanya untuk hiburan.Seperti halnya Kunjungan Industri yang digabung dengan Studytour/piknik.</p>
       <h4>Praktek Kerja Industri</h4>
@@ -90,6 +112,25 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 2 seconds
 }
 </script>
 </body>
