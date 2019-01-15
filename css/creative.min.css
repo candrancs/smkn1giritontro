@@ -184,7 +184,6 @@ header.masthead{
 	 -o-background-size:cover;
 	 background-size:cover;
 	 height: auto;
-
 	}
 
 header.masthead hr{
@@ -195,7 +194,8 @@ header.masthead hr{
 header.masthead h1 /*, :hover */{
 	 font-size:2rem;
 	 color: #ffffff;
-	 /*background-color:rgba(0,0,0,0.5);*/
+	 text-shadow: 0px 0px 0px black, 0 0 20px black, 0 0 45px black;
+	 /*background-color:rgba(0,0,0,0.1);*/
 	}
 
 header.masthead p{
