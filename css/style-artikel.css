@@ -1,3 +1,23 @@
+/*
+*
+*
+*       website ini dibuat oleh team kerja proyek saya 
+*       dan team saya adalah sebagai berikut
+*       
+*       1. Bagus Nurchandra
+*       2. Eka Wuri Astuti
+*       3. Reicha Riastiani
+
+*       Dengan kerja proyek ini team saya bisa menempuh ujian akhir kelas 3 SMK
+*       Dan apabila ada kesalahan kami mohon maaf
+*       Apabila terjadi sesuatu tentang website ini maka tema saya tidak bertanggungjawab
+*
+*
+*                       Terima kasih                    *
+*
+*
+*
+*/
 * {
     box-sizing: border-box;
     .mySlides {display: none}
@@ -6,7 +26,7 @@ img {vertical-align: middle;}
 
 /* Add a gray background color with some padding */
 body {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     text-align: justify;
     line-height: 1.5;
