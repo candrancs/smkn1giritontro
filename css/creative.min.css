@@ -1,3 +1,23 @@
+/*
+*
+*
+*       website ini dibuat oleh team kerja proyek saya 
+*       dan team saya adalah sebagai berikut
+*       
+*       1. Bagus Nurchandra
+*       2. Eka Wuri Astuti
+*       3. Reicha Riastiani
+
+*       Dengan kerja proyek ini team saya bisa menempuh ujian akhir kelas 3 SMK
+*       Dan apabila ada kesalahan kami mohon maaf
+*       Apabila terjadi sesuatu tentang website ini maka tema saya tidak bertanggungjawab
+*
+*
+*                       Terima kasih                    *
+*
+*
+*
+*/
 body,
 html{
 	 width:100%;
@@ -5,14 +25,13 @@ html{
 	}
 
 body{
-	font-family:Merriweather,'Helvetica Neue',Arial,sans-serif
-
+	font-family: 'Exo 2', sans-serif;
 }
 
 hr{
 	 max-width:50px;
 	 border-width:3px;
-	 border-color:transparent
+	 border-color:#0099ff
 
 	}
 
@@ -31,8 +50,8 @@ a:hover{
 	 color:#f05f40
 	}
 
-h1,h2,h3,h4,h5,h6{
-	 font-family:'Open Sans','Helvetica Neue',Arial,sans-serif}
+/*h1,h2,h3,h4,h5,h6{
+	 font-family:'Open Sans','Helvetica Neue',Arial,sans-serif}*/
 
 .bg-primary{
 	 background-color:#003366!important
@@ -85,7 +104,7 @@ img::-moz-selection{
 #mainNav{
 	 border-bottom:1px solid rgba(33,37,41,.1);
 	 background-color:#fff;
-	 font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+	 /*font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;*/
 	 -webkit-transition:all .2s;
 	 -moz-transition:all .2s;
 	 transition:all .2s
@@ -96,7 +115,7 @@ img::-moz-selection{
 	 font-weight:700;
 	 text-transform:uppercase;
 	 color:#0099ff;
-	 font-family:'Open Sans','Helvetica Neue',Arial,sans-serif
+	 /*font-family:'Open Sans','Helvetica Neue',Arial,sans-serif*/
 
 	}
 
@@ -177,7 +196,7 @@ img::-moz-selection{
 header.masthead{
 	 padding-top:10rem;
 	 padding-bottom:calc(10rem - 56px);
-	 background-image:url(https://i.imgur.com/PwywhYy.jpg);
+	 background-image:url(https://3.bp.blogspot.com/-NN3ea96Uvsc/XGqWNLqdTdI/AAAAAAAAC8c/nO3EvvxDSXE9qsqRxKFo3pxjemEXe7GUwCLcBGAs/s1600/cover-header.jpg);
 	 background-position:center ;
 	 -webkit-background-size:cover;
 	 -moz-background-size:cover;
@@ -193,9 +212,9 @@ header.masthead hr{
 
 header.masthead h1 /*, :hover */{
 	 font-size:2rem;
-	 color: #f3f3f3;
+	 color: #ffffff;
 	 text-shadow: 0px 0px 0px black, 0 0 20px black, 0 0 45px black;
-	 /*background-color:rgba(0,0,0,0.1);*/
+	 /*background-color:rgba(0,0,0,0.5);*/
 	}
 
 header.masthead p{
@@ -267,7 +286,7 @@ header.masthead h1{
 	 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 	 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
 	   padding: 0 15px;
-	   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	   /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
 	 }
 
 	 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -305,7 +324,8 @@ header.masthead h1{
 		text-transform:uppercase;
 		border:none;
 		border-radius:300px;
-		font-family:'Open Sans','Helvetica Neue',Arial,sans-serif}
+		/*font-family:'Open Sans','Helvetica Neue',Arial,sans-serif*/
+	}
 
 	.btn-xl{
 		padding:1rem 2rem}
@@ -330,7 +350,7 @@ header.masthead h1{
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
+  /*font: bold 16px sans-serif;*/
   padding: 50px 50px;
 }
 
@@ -352,7 +372,7 @@ header.masthead h1{
 
 .footer-distributed h3 {
   color: #ffffff;
-  font-family: 'Rajdhani', sans-serif;
+  /*font-family: 'Rajdhani', sans-serif;*/
   padding-left: 10px;
   overflow: hidden;
   font-size: 25px;
